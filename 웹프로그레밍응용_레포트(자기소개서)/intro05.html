@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hi>이름 : 최현석 <hi\>
+        <h2>취미 : 게임</h2>
+        <h2>나이 : 비밀</h2>
+        <h2>mbti : istp</h2>
+        <script>
+            // 버튼 클릭 시 콘텐츠를 동적으로 추가하는 함수
+            document.getElementById('addContentButton').addEventListener('click', function() {
+                // 새로운 <h1> 요소 생성
+                const hiElement = document.createElement('h1');
+                hiElement.textContent = '이름 : 최현석'; // <h1> 요소의 텍스트 설정
+                document.body.appendChild(hiElement); // <body>에 <h1> 추가
+    
+                // <h2> 취미 추가
+                const hobbyElement = document.createElement('h2');
+                hobbyElement.textContent = '취미 : 게임';
+                document.body.appendChild(hobbyElement);
+    
+                // <h2> 나이 추가
+                const ageElement = document.createElement('h2');
+                ageElement.textContent = '나이 : 비밀';
+                document.body.appendChild(ageElement);
+    
+                // <h2> mbti 추가
+                const mbtiElement = document.createElement('h2');
+                mbtiElement.textContent = 'mbti : istp';
+                document.body.appendChild(mbtiElement);
+            });
+        </script>
+</body>
+</html>
